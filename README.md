@@ -5,3 +5,4 @@
 * index.html y main.css --> son el esquema del Reto 3
 * Dentro de la carpeta blog_flexbox se encuentra el proyecto del Blog que se pide a partir del Reto 4
 * Carpeta codenotch --> es la maquetación del Día 2
+

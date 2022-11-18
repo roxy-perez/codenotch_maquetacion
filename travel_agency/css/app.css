@@ -2,10 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    max-width: 1300px;
 }
 
 body {
     height: 100vh;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     background: #F2EFEB;
     font-size: 20px;

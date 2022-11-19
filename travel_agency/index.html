@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Roxy's Travel Agency</title>
+</head>
+
+<body onload="clean()">
+    <header>
+        <img class="logo" src="images/logo.svg">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="" href="#"><button>Contact</button></a>
+    </header>
+    <div class="container">
+        <h1 class="title">
+            Welcome to New York Tourisme Web! <br>
+            Discover New York!
+        </h1>
+        <div class="row">
+            <div class="highlights">
+                <h3>
+                    Expand your horizons by exploring with our tours. Find what you love.
+                </h3>
+                <div class="highlights-items">
+
+                    <div class="card">
+                        <img src="images/1.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Lower Manhattan</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/2.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Statue of Liberty</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/3.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Experience Outdoor</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/4.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Brooklyn Bridge</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/5.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Empire State</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/6.jpg" alt="">
+                        <div class="card-text">
+                            <h4><b>Manhattan Bridge</b></h4>
+                            <p>Get outside and experience the city</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <form class="contact-form" id="travel-form">
+                <div class="input-fields">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="text" name="origin" id="origin" placeholder="Origin">
+                    <input type="text" name="destination" id="destination" placeholder="Destination">
+
+                    <div class="input-fields__row">
+                        <label for="nPeople">Number of people:</label>
+                        <input type="number" name="nPeople" id="nPeople" min="1" max="10" placeholder="">
+                        <label for="date">Departure date:</label>
+                        <input type="date" id="date" name="date" placeholder="Date">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" name="info" id="submit">Save info</button>
+                </div>
+
+            </form>
+
+            <section>
+                <div class="header-table">
+                    <button type="search" name="search" id="search">Search</button>
+                    <h5>Canarias - Mallorca - Galicia</h5>
+                   
+                </div>
+                <div>
+                    <table class="list" id="list">
+                        <th>Name</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Number of People</th>
+                        <th>Departure date</th>
+                    </table>
+                    
+                </div>
+
+            </section>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

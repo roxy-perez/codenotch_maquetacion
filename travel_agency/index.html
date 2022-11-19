@@ -13,7 +13,7 @@
     <title>Roxy's Travel Agency</title>
 </head>
 
-<body>
+<body onload="clean()">
     <header>
         <img class="logo" src="images/logo.svg">
         <nav>
@@ -88,7 +88,7 @@
                     <input type="text" name="name" id="name" placeholder="Name">
                     <input type="text" name="origin" id="origin" placeholder="Origin">
                     <input type="text" name="destination" id="destination" placeholder="Destination">
-                    
+
                     <div class="input-fields__row">
                         <label for="nPeople">Number of people:</label>
                         <input type="number" name="nPeople" id="nPeople" min="1" max="10" placeholder="">
@@ -97,11 +97,29 @@
                     </div>
                 </div>
                 <div class="btn">
-                    <button type="submit" name="info" id="submit">Get info</button>
-                    <button type="search" name="search">Search</button>
+                    <button type="submit" name="info" id="submit">Save info</button>
                 </div>
 
             </form>
+
+            <section>
+                <div class="header-table">
+                    <button type="search" name="search" id="search">Search</button>
+                    <h5>Canarias - Mallorca - Galicia</h5>
+                   
+                </div>
+                <div>
+                    <table class="list" id="list">
+                        <th>Name</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Number of People</th>
+                        <th>Departure date</th>
+                    </table>
+                    
+                </div>
+
+            </section>
         </div>
 
     </div>

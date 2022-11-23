@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+:root {
+    --primary-color: #161615;
+    --secondary-color: #F2762E;
+    --third-color: #F2F2F2;
+    --fourth-color: #1A1826;
+    --primary-shadow: #F25430;
+    --secondary-shadow: #F26E50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--primary-color);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--third-color);
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--secondary-color);
+    transition: .3s;
+    bottom: 0;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.contact-nav {
+    width: 100%;
+}
+
+.logo {
+    max-height: 75px;
+    border-radius: 100px;
+    box-shadow: 0 3px 20px var(--secondary-shadow);
+}
+
+.container {
+    max-width: 800px;
+    background: transparent;
+    margin: 10% 20%;
+    padding: 25px 40px 10px 40px;
+    border: var(--secondary-color) solid 1px;
+    box-shadow: 10px 10px 7px -4px rgba(242, 118, 46, 0.51);
+}
+
+.container .text {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    background: var(--secondary-color);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container form {
+    padding: 30px 0 0 0;
+}
+
+.container form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(16, 15, 15, 0.934);
+}
+
+.input-data input:focus~label,
+.textarea textarea:focus~label,
+.input-data input:valid~label,
+.textarea textarea:valid~label {
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data label {
+    color: var(--third-color);
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: transparent;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: var(--secondary-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before,
+.textarea textarea:focus~.underline:before,
+.textarea textarea:valid~.underline:before {
+    transform: scale(1);
+}
+
+.input-data input {
+    background: transparent;
+    border-color: var(--secondary-color);
+    color: var(--third-color);
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.form-row .btn {
+    color: var(--primary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 40%;
+    padding: 10px 30px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.form-row .btn:hover {
+    background: transparent;
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    clip-path: circle(700px at right 1100px);
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        max-width: 600px;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+    .container form {
+        padding: 10px 0 0 0;
+    }
+
+    .container form .form-row {
+        display: block;
+    }
+
+    form .form-row .input-data {
+        margin: 35px 0 !important;
+    }
+
+    .input-data {
+        width: 40% !important;
+    }
+}

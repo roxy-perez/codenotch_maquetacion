@@ -1,0 +1,253 @@
+:root {
+    --background-color: #fafafa;
+}
+
+* {
+    display: block;
+    font-family: -apple-system, -apple-system, 'system-ui'
+        BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans',
+        'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    height: 100vh;
+    margin: 0px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 32px;
+    height: 90%;
+}
+
+.container__left {
+    background-image: url(./img/phones.png);
+    background-repeat: no-repeat;
+    align-self: center;
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+    flex-basis: 380.32px;
+    height: 581.15px;
+    margin-bottom: 500px;
+    margin-right: 32px;
+    transform: scale(1);
+}
+
+.container__left img {
+    top: 30px;
+    left: 112px;
+    border: 0;
+    font-size: 100%;
+    height: 538.84px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 250px;
+}
+
+.container__right {
+    margin-top: 30px;
+    max-width: 350px;
+}
+
+.container__right--form {
+    color: rgb(38, 38, 38);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 130px;
+    max-width: 350px;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    font-family: -apple-system;
+    padding: 40px;
+}
+
+.container__right--form img {
+    padding: 0px 70px 30px 70px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    align-self: center;
+    width: 175px;
+    height: 51px;
+}
+
+.container__right--form input {
+    all: unset;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    margin-top: 10px;
+}
+
+.container__right--btn {
+    background-color: rgba(0, 149, 246, 0.3);
+    text-align: center;
+    font-size: smaller;
+    font-weight: 600;
+    height: 15px;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.container__line {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__line .line {
+    background-color: rgb(142, 142, 142);
+    height: 1px;
+    width: 150px;
+}
+
+.container__line .or {
+    font-weight: 600;
+    color: rgb(142, 142, 142);
+    padding: 0px 20px;
+}
+
+.container__right--fb {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    color: #385185;
+    font-weight: 600;
+    font-size: 14px;
+    top: 3px;
+}
+
+.fb-icon {
+    margin-left: 24px;
+    position: relative;
+    top: 14px;
+    background-image: url(./img/face.png);
+    background-repeat: round;
+    background-position: -0px;
+    height: 12px;
+    width: 12px;
+    transform: scale(1.4);
+}
+
+.psw {
+    color: rgb(0, 55, 107);
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgb(219, 219, 219);
+    text-align: center;
+    gap: 6px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0px;
+    width: 310px;
+}
+
+.register span {
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+
+.download {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    gap: 8px;
+}
+
+.download img {
+    height: 40px;
+}
+
+.footer {
+    height: 10%;
+    margin-top: -20%;
+}
+
+.footer-upper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 1400px;
+    font-size: smaller;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 10px;
+}
+
+.footer span {
+    color: gray;
+}
+
+.footer-lower {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (min-width: 390px) and (max-width: 1400px) {
+
+    .container__left {
+        display: none;
+    }
+
+    .container__right--form {
+        margin: auto;
+    }
+
+    .download {
+        direction: ltr;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer-upper {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+        position: relative;
+        margin-bottom: -2px;
+        top: -70px;
+    }
+
+    .footer-lower {
+        padding: 0;
+    }
+
+
+}
